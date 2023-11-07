@@ -1,0 +1,466 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 40px;
+}
+section{
+    scroll-snap-align: start;
+}
+
+header{
+    background-color: rgb(9, 9, 54);
+    position: relative;
+    padding: 10px 0px;
+}
+    
+ 
+#main{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: "poppins";
+    letter-spacing: 10px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(9, 9, 54);
+    text-align: center;
+    z-index: 1;
+}
+
+.navbar ul{
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    padding: 10px;
+}
+.navbar li{
+    display: inline;
+    margin: 0 50px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none; 
+    font-family: poppins;
+    position: relative;
+}
+
+.navlink::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    border-radius: 2px;
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+.navlink:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+#vid1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -18px;
+}
+
+.home .button .one{
+    position: absolute;
+    top: 92%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .button a:hover{
+    background: rgb(9, 9, 54);
+}
+
+.home .button .two{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .button .three{
+    position: absolute;
+    top: 92%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .button a{
+    font-family: poppins;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.99rem 2.6rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.about{
+   background-image: url(images/fallad.jpg); 
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   position: relative;
+   top: -25px;
+   scroll-snap-align: start;
+}
+
+.about .overlay{
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.about p{
+    font-family: poppins;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h2{
+    font-family: poppins;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.history{
+    background-image: url(images/old1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    top: -25px;
+    scroll-snap-align: start;
+}
+
+.history .overlay{
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.history p{
+    font-family: poppins;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.history h2{
+    font-family: poppins;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.history img{
+    height: 300px;
+    width: auto;
+    box-shadow: 20px 20px 40px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.trending{
+    background-image: url(images/smallbag.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    top: -25px;
+}
+
+.trending .overlay{
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.trending h2{
+    font-family: poppins;
+    font-size: 50px;
+    color:white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trending .perfd{
+    font-family: "dancing script";
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.trending .bagd{
+    font-family: "dancing script";
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.trending .bag img{
+    height: 370px;
+    width: auto;
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 40px black;
+}
+
+
+.trending .perfume img{
+    height: 370px;
+    width: auto;
+    position: absolute;
+    top: 52%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 40px black;
+}
+
+
+#vid2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -27px;
+}
+
+.news{
+    background-image: url(images/spring.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    top: -35px;
+}
+
+.news .overlay{
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.news .table{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.news td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:white;
+    width: 1000px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 0px;
+}
+
+.news td a{
+    color: rgb(116, 101, 250);
+}
+
+.news td a:hover{
+    color: rgb(33, 216, 248);
+}
+
+.news h2{
+    font-family: poppins;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.article{
+    display: inline-block;
+    margin: 50px;
+}
+
+.article div{
+    float: left;
+    margin-left: 10px;
+}
+
+.readalso h2{
+    font-family: poppins;
+    color: rgb(17, 17, 100);
+    font-size: 40px;
+    position: relative;
+    bottom: -25px;
+    margin-left: 50px;
+}
+
+.article p{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.article .artc:hover{
+    border: 0.1px solid white;
+}
+
+.article img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer{
+    background-color:rgb(9, 9, 54);
+    padding: 70px 0;
+}
+
+.footer .follow{
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.footer .follow h4{
+    position: relative;
+    left: 25px;
+    color: #bbbbbb;
+    font-size: 25px;
+    font-family: poppins;
+    margin-bottom: 20px;
+}
+
+.footer .follow .sociallinks a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer .follow .sociallinks a:hover{
+    color: rgb(17, 17, 100);
+    background-color: white;
+}
+
+.footer .subscribe{
+    position: relative;
+    left: 50%;
+    top: -80px;
+}
+
+.footer .subscribe h4{
+    color: #bbbbbb;
+    font-size: 25px;
+    font-family: poppins;
+    margin-bottom: 20px;
+}
+
+.footer .subscribe a{
+    text-decoration: none;
+}
+
+.footer .subscribe a h4:hover{
+    color: white;
+}
+
+.footercol{
+    width: 25%;
+}
+
+.footercol ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footercol ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footercol ul li a:hover{
+    color: white;
+    padding-left: 7px;
+}
