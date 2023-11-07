@@ -305,7 +305,7 @@ header{
     transform: translate(-50%, -50%);
 }
 .news td{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: poppins;
     background-color:white;
     width: 1000px;
     height: 100px;
@@ -315,6 +315,7 @@ header{
 
 .news td a{
     color: rgb(116, 101, 250);
+    text-decorarion: none;
 }
 
 .news td a:hover{
